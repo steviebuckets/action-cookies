@@ -1,3 +1,220 @@
-.carousel {
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: 'Bitter', serif;
+}
+/* Navbar */
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+  padding-top: 2em;
+  font-size: 1.3em;
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+
+
+#myNavbar ul{
+ clear:left;
+ float:left;
+ list-style:none;
+ margin:0;
+ padding:0;
+ position:relative;
+ left:50%;
+ text-align:center;
+}
+#myNavbar ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+#myNavbar ul li a {
+  color: #1b0000;
+   display:block;
+   margin:0 0 0 10px;
+   padding:10px 20px;
+   text-decoration:none;
+}
+
+.navbar-toggle{
+  background-color: #efefef;
+  text-align: center;
+}
+
+.nav{
+  color: yellow;
+}
+/* Hero Section */
+
+.inner-cover {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  /*background-image: url("/images/cookies.jpg");*/
+  background-image: url("/images/hero.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+}
+
+
+/* Action Cookie Logo */
+
+img {
+  padding-top: 19.5em;
+}
+
+/* About Section */
+/*hr {
+
+    padding-left: 600px;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-style: solid black;
+}*/
+.container{
+  padding-bottom: 5em;
+}
+.about{
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1em;
+  height: 50vh;
+  width: 100px;
+}
+.about h1{
+  padding-bottom: 10px;
+}
+
+
+span{
+  color: black;
+  font-weight: 200;
+  font-style: italic;
+  font-family: 'Source Code Pro', monospace;
   background-color: yellow;
+}
+
+.quote{
+  padding-top: 20px;
+}
+.about-text{
+  /*background-color: yellow;*/
+  margin-left: 520px;
+  margin-right: 520px;
+}
+/*.about h1, h2{
+  line-height: 1.3;
+  color: #ffffff;
+}*/
+/*.about p{
+  font-size: 17px;
+  color: #ffffff;
+}*/
+
+/*.img-circle{
+  border-radius: 40%;
+  margin-top: -14em;
+}*/
+
+.about p{
+  font-size: 17px;
+  font-family: 'Source Code Pro', monospace;
+}
+.quote{
+  padding-bottom: 20px;
+}
+
+.container, #about-section{
+  /*background-color: #40241a;*/
+  width: auto;
+}
+.about, .insta{
+  height: inherit;
+  padding-top: 10px;
+}
+
+/* Cookie Locator Section */
+.container-fluid{
+  text-align: center;
+}
+.container-fluid a{
+  display: block;
+}
+
+
+/* Footer Section, Set black background color, white text and some padding */
+.mastfoot {
+  background-color: #1b0000;
+  color: white;
+  padding: 15px;
+}
+
+
+/* Resposnive Styles Below/*
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .navbar-default {
+    padding-top: 10px;
+    display: block;
+    font-size: 15px;
+  }
+
+  #myNavbar ul li a {
+    color: #1b0000;
+     display:inline-block;
+     margin:0 0 0 0px;
+     padding:10px 10px;
+  }
+  .inner-cover img {
+    width: 90%;
+    margin-top: 190px;
+  }
+  .inner-cover {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 70vh;
+    position: relative;
+    background-size: contain;
+    /*background-image: url("/images/cookies.jpg");*/
+    background-image: url("/images/hero.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+  }
+  img {
+    padding-top: 2.5em;
+  }
+  .about-text{
+    /*background-color: yellow;*/
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .insta{
+    width: 100%;
+  }
+
 }
