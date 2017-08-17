@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Bitter|Source+Code+Pro:200" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+
 
   <link rel="stylesheet" href="css/main.css">
   <title>Action Cookies Starter</title>
@@ -36,7 +38,7 @@
                 <ul class="nav navbar-nav">
                   <!-- <li class="active"><a href="#">Home</a></li> -->
                   <li><a href="#about-section">About</a></li>
-                  <li><a href="#">Cookie Locator</a></li>
+                  <li><a href="#cookie-locator">Cookie Locator</a></li>
                   <li><a href="#">Ingredients</a></li>
                   <li><a href="#contact-footer">Contact</a></li>
                 </ul>
@@ -69,26 +71,22 @@
         </div>
 
         <!-- Cookie Locator Section -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="cookie-locator">
           <h1>Cookie Locator</h1>
-          <p>Resize the browser window to see the effect.</p>
-          <div class="row">
+          <div class="row" id="search">
             <div class="col-sm-6">
-              <div class="form-group row">
-                <label for="example-search-input" class="col-2 col-form-label">Search</label>
-                <div class="col-10">
-                  <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
-                </div>
-                <h1>Enter by zip, Search Input Here</h1>
-              </div>
+              <div class="zip-search">
+             <form onSubmit={this.onSubmit}><input type="text" className="form-control" style="text-align:center; line-height:2.5; width: 100%;"ref="search" placeholder="City or Zip"/></form>
+             </div>
+           </div>
               <div class="col-sm-6">
                 <ul>
-                  <a href="">Tomato Pie Pizza Joint</a>
-                  <a href="">Starbucks</a>
-                  <a href="">Coffe Shack</a>
-                  <a href="">Fair Oaks Bakery</a>
-                  <a href="">Cookie Bakery & Coffee</a>
-                  <a href="">Two Kids Coffee</a>
+                  <a href="">Barbara's at the Brewery<br/>620 Moulton Av #110<br/>Los Angeles CA 90031</a>
+                  <a href="">Copa  Vida<br/>70 S Raymond Ave<br/>Pasadena CA 91105</a>
+                  <a href="">Chimney Coffee House<br/>1100 N. Main St. STE B<br/>Los Angeles CA 90012</a>
+                  <a href="">Caffe Vita<br/>4459 W Sunset Boulevard<br/>Los Angeles CA 90027</a>
+                  <a href="">KAFN<br/>1019 E Palmer Ave<br/>Glendale CA 91205</a>
+                  <a href="">Kaldi Coffee<br/>3147 Glendale Blvd<br/>Los Anegles 90039</a>
                 </ul>
                 <!-- <img src="images/map.jpg" alt=""> -->
               </div>
