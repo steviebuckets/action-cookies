@@ -83,16 +83,18 @@ img {
 }
 
 /* About Section */
-/*hr {
 
-    padding-left: 600px;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-    border-style: solid black;
+/*.hr-style{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }*/
+/*hr{
+    margin-right: 400px;
+    margin-left: 400px;
+    height: 1px;
+}*/
+
 .container{
   padding-bottom: 5em;
 }
@@ -159,7 +161,7 @@ span{
 /* Cookie Locator Section */
 .container-fluid{
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 100px;
   font-family: 'Bitter', serif;
 }
 
@@ -196,6 +198,34 @@ span{
   word-spacing: 3px;
 }
 
+/* Action Bar Section */
+/*.action-bar-container .title{
+  text-align: left;
+  display: inline;
+  margin-left: 400px;
+  margin-right: 200px;
+}*/
+.action-bar-container p{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 17px;
+  font-style: italic;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  /*margin-left: 20px;
+  margin-right: 100px;*/
+}
+.action-bar-container .row{
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+#action-row{
+  background-color: yellow;
+}
 
 /* Footer Section, Set black background color, white text and some padding */
 .mastfoot {
@@ -247,6 +277,43 @@ span{
   }
   .insta{
     width: 100%;
+  }
+
+  .zip-search{
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 25px;
+  }
+
+  .form-control{
+    text-align: center;
+    width: 100%;
+  }
+
+  .col-sm-6 ul{
+    margin-bottom: 10px;
+    /*float: right;*/
+    /*width: 100%;*/
+    text-align: center;
+  }
+  .col-sm-6 a{
+    display: block;
+    margin: 0 auto;
+    /*margin-right: -300px;*/
+    /*text-align: left;*/
+    /*padding-right: 0px;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 70px;
+    padding-bottom: 10px;
+    color: #40241a;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    word-spacing: 3px;
+  }
+  #search{
+    width: 100%;
+    margin: auto;
   }
 
 }
