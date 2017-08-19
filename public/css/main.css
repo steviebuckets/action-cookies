@@ -387,20 +387,45 @@ span{
   .mastfoot{
     margin: 0 auto;
     text-align: center;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
+  .mastfoot .inner{
+    text-align: center;
+    margin: auto;
+    float: none;
+  }
+  .mastfoot .outer{
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 60px;
+
+  }
+
+
   /*.mastfoot .outer{
-    display: block;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 150px;
+    margin-left: 150px;
+  }
+
+  .mastfoot .outer p{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
   }*/
-  /*.mastfoot .inner{
-    display: block;
-    color: yellow;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
+
+  /*.mastfoot .inner .outer{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }*/
+  /*.mastfoot .inner h1{
+    margin: 0 auto;
+    padding-left: 10px;
+    text-align: center;
+  }*/
+  /*.mastfoot p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }*/
 
 }
